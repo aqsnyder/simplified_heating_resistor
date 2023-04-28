@@ -7,7 +7,7 @@
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
-    format      ascii;
+    format      binary;
     class       polyBoundaryMesh;
     location    "constant/polyMesh";
     object      boundary;
@@ -20,32 +20,32 @@ FoamFile
     {
         type            patch;
         nFaces          600;
-        startFace       144738;
+        startFace       145731;
     }
     inlet
     {
         type            patch;
         nFaces          300;
-        startFace       145338;
+        startFace       146331;
     }
     outlet
     {
         type            patch;
         nFaces          300;
-        startFace       145638;
+        startFace       146631;
     }
     lowerWall
     {
         type            wall;
         inGroups        List<word> 1(wall);
         nFaces          100;
-        startFace       145938;
+        startFace       146931;
     }
     upperWall
     {
         type            patch;
         nFaces          100;
-        startFace       146038;
+        startFace       147031;
     }
     cube1
     {
@@ -57,8 +57,8 @@ cubeGroup
 wall
 )
 ;
-        nFaces          4920;
-        startFace       146138;
+        nFaces          4926;
+        startFace       147131;
     }
     cube2
     {
@@ -70,8 +70,8 @@ cubeGroup
 wall
 )
 ;
-        nFaces          4064;
-        startFace       151058;
+        nFaces          4085;
+        startFace       152057;
     }
     cube3
     {
@@ -83,8 +83,8 @@ cubeGroup
 wall
 )
 ;
-        nFaces          5248;
-        startFace       155122;
+        nFaces          5257;
+        startFace       156142;
     }
 )
 
