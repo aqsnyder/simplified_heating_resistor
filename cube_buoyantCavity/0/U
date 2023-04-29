@@ -8,41 +8,43 @@
 FoamFile
 {
     format      ascii;
-    class       dictionary;
-    location    "system";
-    object      controlDict;
+    class       volVectorField;
+    location    "0";
+    object      U;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     scalarTransportFoam;
+dimensions      [0 1 -1 0 0 0 0];
 
-startFrom       startTime;
+internalField   uniform (0 0 0);
 
-startTime       0;
+boundaryField
+{
+    frontAndBack
+    {
+        type            noSlip;
+    }
 
-stopAt          endTime;
+    left
+    {
+        type            noSlip;
+    }
 
-endTime         3;
+    right
+    {
+        type            noSlip;
+    }
 
-deltaT          0.001;
+    lowerWall
+    {
+        type            noSlip;
+    }
 
-writeControl    timeStep;
-
-writeInterval   50;
-
-purgeWrite      0;
-
-writeFormat     ascii;
-
-writePrecision  6;
-
-writeCompression off;
-
-timeFormat      general;
-
-timePrecision   6;
-
-runTimeModifiable true;
-
+    upperWall
+    {
+        type            noSlip;
+    }
+}
 
 // ************************************************************************* //
+
