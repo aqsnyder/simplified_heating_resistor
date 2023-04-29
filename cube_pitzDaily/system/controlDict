@@ -14,21 +14,21 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     laplacianFoam;
+application     scalarTransportFoam;
 
-startFrom       latestTime;
+startFrom       startTime;
 
 startTime       0;
 
 stopAt          endTime;
 
-endTime         100;
+endTime         20;
 
-deltaT          0.02;
+deltaT          0.001;
 
-writeControl    runTime;
+writeControl    timeStep;
 
-writeInterval   0.1;
+writeInterval   50;
 
 purgeWrite      0;
 
