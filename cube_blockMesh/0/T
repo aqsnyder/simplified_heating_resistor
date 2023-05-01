@@ -16,7 +16,7 @@ FoamFile
 
 dimensions      [0 0 0 1 0 0 0];
 
-internalField   uniform 300;
+internalField   uniform 298.15; // 25°C in Kelvin
 
 boundaryField
 {
@@ -28,7 +28,7 @@ boundaryField
     left
     {
         type            fixedValue;
-        value           uniform 1000;
+        value           uniform 393.15; // 120°C in Kelvin
     }
 
     right
@@ -47,3 +47,4 @@ boundaryField
     }
 }
 // ************************************************************************* //
+

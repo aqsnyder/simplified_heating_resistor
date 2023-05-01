@@ -22,34 +22,30 @@ boundaryField
 {
     frontAndBack
     {
-        type            calculated;
-        value           uniform 0;
+       type            zeroGradient;
     }
 
     left
     {
-        type            nutUWallFunction;
-        value           uniform 0;
+ 	type            zeroGradient;
     }
 
     right
     {
-        type            nutUWallFunction;
-        value           uniform 0;
+ 	type            zeroGradient;
     }
 
     lowerWall
     {
-        type            nutUWallFunction;
-        value           uniform 0;
+ 	type            zeroGradient;
     }
 
     upperWall
     {
-        type            calculated;
-        value           uniform 0;
+    	type            zeroGradient;
     }
 }
 
 // ************************************************************************* //
+
 

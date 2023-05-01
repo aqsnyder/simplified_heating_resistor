@@ -17,9 +17,9 @@ simulationType RAS;
 
 RAS
 {
-    model               kOmegaSST;
+    model               SpalartAllmaras;
 
-    turbulence          on;
+    turbulence          off;
 
     printCoeffs         on;
 }
